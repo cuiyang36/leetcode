@@ -2,6 +2,12 @@ package Exercise;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * print all unique combination of factors of a number. For example: 12's 
+ * result are 1*12, 2*6, 2*2*3， 3*4
+ * @author cuiyang36
+ *
+ */
 public class UniqueFactor {
 	
 	public static List<List<Integer>> uniqueFactor(int n){
