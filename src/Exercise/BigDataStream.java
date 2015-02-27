@@ -101,5 +101,7 @@ public class BigDataStream {
 		List<String> in = Arrays.asList(input);
 		List<String> rst1 = task1(in);
 		List<String> rst2 = task2(in, 3);
+		System.out.println("rst1: " + rst1);
+		System.out.println("rst2: " + rst2);
 	}
 }

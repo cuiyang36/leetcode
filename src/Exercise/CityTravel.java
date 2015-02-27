@@ -5,6 +5,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * give several cities and lots of flight tickets that transfer between cities,
+ * give rst about planing a round city trip
+ * 
+ * @author cuiyang36
+ *
+ */
+
 public class CityTravel {
 	
 	public static class City{
