@@ -11,15 +11,6 @@ import java.util.Stack;
  */
 public class Serialize_Deserialize_NTree {
 	
-	private static class TreeNodeII{
-		private List<TreeNodeII> neighbors;
-		private String val;
-		public TreeNodeII(String val){
-			this.val = val;
-			neighbors = new ArrayList<TreeNodeII>();
-		}
-	}
-	
 	public static String serializeDFS(TreeNodeII root){
 		StringBuffer sb = new StringBuffer();
 		serializeDFSHelper(root, sb);
