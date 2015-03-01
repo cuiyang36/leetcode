@@ -1,10 +1,16 @@
 package Exercise;
 
-import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
+/**
+ * There are two problems whne using hashMap: 
+ * 1. Cannot decrease the time comlexity from O(n ^ 2)
+ * 2. Using too many heap spaces, since String cost more than Integer
+ * @author cuiyang36
+ *
+ */
 public class NumOfDistinctSubstringOfString {
 	
 	private static int numOfDistinctSubstringOfStringMethod1(String s){
@@ -44,7 +50,14 @@ public class NumOfDistinctSubstringOfString {
 	
 
 	public static void main(String[] args){
-		int length = 1000;
+		/**
+		 * Test for String length: 2000
+         * Standard hash method number: 1997568
+         * Time used: 5795 ms
+         * Suffix tree method number: 1997568
+         * Time used: 1639 ms
+		 */
+		int length = 2000;
 		System.out.println("Test for length: " + length);
 		String input = generateRandomString(length);
 		long start1 = System.currentTimeMillis();
