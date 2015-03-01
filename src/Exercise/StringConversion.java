@@ -36,7 +36,7 @@ public class StringConversion {
 	}
 	
 	public static void main(String[] args){
-		String input = "a#3bd#5";
+		String input = "a#10bd#5";
 		String rst = stringConversion(input);
 		System.out.println(rst);
 	}
