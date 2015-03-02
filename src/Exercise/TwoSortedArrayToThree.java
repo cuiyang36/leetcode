@@ -5,9 +5,10 @@ import java.util.Arrays;
 /**
  * Two unsorted array
  * 
- * output  3 sorted array, one of which contains the 
+ * output 3 sorted array, one of which contains the 
  * dumplicated elements in both array 
  * 
+ * Input
  * 1, 3, 5, 7, 8, 9, 10, 11 
  * 2, 4, 6, 8, 10
  * 
