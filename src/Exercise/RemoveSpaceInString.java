@@ -1,5 +1,12 @@
 package Exercise;
 
+/**
+ * Remove additional space from sentence, take care of the signal
+ * "  The    sky  is   beautiful  ,  I like    4  ! " should be:
+ * "The sky is beautiful, I like 4!"
+ * @author cuiyang36
+ *
+ */
 public class RemoveSpaceInString {
 	
 	public static String removeSpace(String s){
