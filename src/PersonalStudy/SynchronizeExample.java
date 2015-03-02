@@ -3,7 +3,7 @@ package PersonalStudy;
 public class SynchronizeExample {
 
 	public class PrintDemo {
-		public void printCount() {
+		public synchronized void printCount() {
 			try {
 				for (int i = 5; i > 0; i--) {
 					System.out.println("Counter   ---   " + i);
@@ -34,7 +34,7 @@ public class SynchronizeExample {
 			System.out.println("Starting " + threadName);
 			if (t == null) {
 				t = new Thread(this, threadName);
-				t.run();
+				t.start();
 			}
 		}
 
