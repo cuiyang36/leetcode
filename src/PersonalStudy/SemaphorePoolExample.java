@@ -103,6 +103,7 @@ public class SemaphorePoolExample {
 		Pool pool = new SemaphorePoolExample().new Pool();
 		Thread t1 = new SemaphorePoolExample().new ThreadDemo("client 2", pool);
 		Thread t2 = new SemaphorePoolExample().new ThreadDemo("client 1", pool);
+		// should be start() instead of run() to be operated concurrently
 		t1.start();
 		t2.start();
 		try {
