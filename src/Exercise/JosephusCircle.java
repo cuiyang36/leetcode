@@ -49,7 +49,7 @@ public class JosephusCircle {
 	}
 	
 	public static void main(String[] args){
-		ListNode rst = killToOne(1000, 10);
+		ListNode rst = killToOne(5000, 10);
 		System.out.println(rst.val + " left!");
 	}
 
