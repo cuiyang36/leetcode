@@ -120,13 +120,23 @@ public class TopKFrequent {
 				map.put(line, new Node(line, 1));
 			}
 			
-			// check the status of the node
+			// check the status of the node when we need to adjust the queue
+			// when the size of the queue is smaller than k
 			if (queue.size() < k){
 				queue.add(map.get(line));
 				set.add(line);
-			}else if (set){
-				
+			// when the Node is not in the queue, but its n is larger than the 
+			// n of the top element in the queue
+			}else if (!set.contains(line) && map.get(line).n > queue.peek().n){
+				set.remove(queue.poll().s);
+				queue.add(map.get(line));
+				set.add(line);
 			}
+		}
+		System.out.println();
+		while (!queue.isEmpty()){
+			Node curr = queue.poll();
+			System.out.print("{" + curr.s + " " + curr.n + "} ");
 		}
 	}
 
