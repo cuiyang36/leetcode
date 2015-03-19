@@ -43,7 +43,7 @@ public class NextNode {
 		return null;
 	}
 	
-    // here I will use stack and the root node to do the 
+    // here I will use stack and the root node to do the inorder traversal
 	public static TreeNode findNextNode(TreeNode node, TreeNode root){
 		if (node == null || root == null){
 			return null;
