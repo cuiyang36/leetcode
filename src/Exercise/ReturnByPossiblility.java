@@ -32,11 +32,7 @@ public class ReturnByPossiblility {
 			sum += array[i].number;
 		}
 		int random = new Random().nextInt(sum);
-		// determine the boundary condition for the range
-		if (random >= pool[pool.length - 1]){
-			return map.get(pool[pool.length - 1]);
-		}
-		// now the number should in the range: [pool[0], pool[pool.length - 1])
+		
 		// left one is always smaller than target and right one is always larger
 		// than the target
 		int left = 0, right = pool.length - 1;
@@ -47,11 +43,12 @@ public class ReturnByPossiblility {
 			}else if (random > pool[mid]){
 				left = mid;
 			}else{
-				right = mid;
+				// so right may be smaller than the random
+				right = mid - 1;
 			}
 		}
 		//System.out.println(sum + " " + random + " " + pool[left]);
-		return map.get(pool[left]);
+		return (pool[right] <= random)? map.get(pool[right]): map.get(pool[left]);
 	}
 	
 	public static void main(String[] args){
